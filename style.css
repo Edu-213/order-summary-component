@@ -1,0 +1,109 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Pale-blue);
+}
+
+#container {
+    width: 375px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#imagem-topo img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+#conteudo h1 {
+    padding: 25px 0px 20px 0px;
+    font-size: 25px;
+}
+
+#descricao {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    padding: 0px 50px 20px;
+    line-height: 25px;
+}
+
+#plano {
+    display: flex;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 15px;
+    margin: 0px 30px;
+    border-radius: 10px;
+}
+
+#price {
+    padding: 0px 30px;
+}
+
+#price h2 {
+    font-size: 16px;
+}
+
+#price p {
+    color: var(--Desaturated-blue);
+}
+
+#plano a {
+    color: var(--Bright-blue);
+    font-weight: 700;
+    padding: 0px 0px 0px 20px;
+}
+
+#pagamento {
+    background-color: var(--Bright-blue);
+    margin: 20px 30px 20px;
+    width: 315px;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 20px 20px var(--Pale-blue);
+}
+
+#cancel {
+    margin-bottom: 30px;
+}
+
+#cancel a {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+}
+
+@media (min-width: 750px) {
+
+    #plano a:hover {
+        text-decoration: none;
+        color: var(--Desaturated-blue);
+    }
+
+    #pagamento:hover {
+        cursor: pointer;
+    }
+
+    #cancel a:hover {
+        color: var(--Dark-blue);
+    }
+}
